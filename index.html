@@ -7,29 +7,54 @@
 </head>
 <body>
 <header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Contact</a>
+    <nav class="navigation-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
     </nav>
 </header>
-<main>
-    <article>
-        <header>
-            <h1>Hakan Tekir</h1>
-        </header>
-        <section>
-            <img src="images/hakantekir.jpeg" alt="Profile Photo" style="width: 400px">
-        </section>
-        <section>
+
+<main id="home">
+    <header>
+        <h1>Hakan Tekir</h1>
+    </header>
+    <section class="about-section" id="about">
+        <img src="images/hakantekir.jpeg" class = "profile-pic" alt="Hakan Tekir, Computer Engineering student at Marmara University, specializing in iOS development">
+        <section class = "bio">
+            <h2>About</h2>
+            <hr>
             <p>Hi, my name is Hakan and I am currently a third-year student in the Computer Engineering program at Marmara University. My primary area of interest is iOS development, and I have a strong passion for creating innovative and user-friendly applications for Apple devices.</p>
         </section>
-    </article>
+    </section>
+
+    <div class="spacer"></div>
+
+    <section class="portfolio" id="portfolio">
+        <h2>Portfolio</h2>
+        <hr>
+        <ul>
+            <li>
+                <a href="https://github.com/hakantekir/iDeliver">iDeliver</a>
+                <p>iDeliver is a mobile app that allows users to order groceries for delivery straight to their door. As the lead developer on this project, I used Swift programming language and the UIKit framework to create a user-friendly interface. I also implemented the MVVM (Model-View-ViewModel) architecture and the Coordinator pattern to ensure a clean and maintainable codebase.</p>
+                <p>In addition to the frontend, I also built the backend of the app using Node.js and MongoDB. This involved designing a database schema, implementing API endpoints, and ensuring secure data transmission.</p>
+                <p>With iDeliver, users can browse a selection of grocery items, add them to their cart, and check out with just a few clicks. The app also includes features such as real-time order tracking and push notifications to keep users informed about their delivery status.</p>
+            </li>
+            <li>
+                <a href="https://github.com/hakantekir/iCoffee">iCoffee</a>
+                <p> iCoffee is a mobile app that allows users to order coffee to their house. The app was developed using Swift programming language and SwiftUI framework, following the MVVM architecture pattern. The backend was written in Node.js and uses MySQL database to store user data.</p>
+            </li>
+            <li>
+                <a href="https://github.com/kenanbylan/ArkitFaceStoryFilter">ARFace</a>
+                <p> ARFace is an iOS app that lets users apply fun and interactive face filters using augmented reality technology. Built using Swift programming language and a variety of powerful frameworks including UIKit, ARKit, SceneKit, and Firebase, this app is both innovative and user-friendly.</p>
+            </li>
+        </ul>
+    </section>
 </main>
-<footer>
-    <a href="https://github.com/hakantekir/"><img class="icon" src="images/github.png" alt="Github Icon" width="30" height="30"></a>
-    <a href="https://www.linkedin.com/in/hakantekir/"><img class="icon" src="images/linkedin.png" alt="LinkedIn Icon" width="30" height="30"></a>
+
+<footer class="social-links-container" id="contact">
+    <a href="https://github.com/hakantekir/"><img class="social-icon" src="images/github.png" alt="Github Icon"></a>
+    <a href="https://www.linkedin.com/in/hakantekir/"><img class="social-icon" src="images/linkedin.png" alt="LinkedIn Icon"></a>
 </footer>
 </body>
 </html>

@@ -10,11 +10,12 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-nav {
+.navigation-menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 nav a {
@@ -22,33 +23,65 @@ nav a {
     text-decoration: none;
     font-size: 18px;
     margin-right: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    transform: translateY(-5px);
 }
 
 main {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 65vw;
+    margin: 10px auto 0;
     padding: 20px;
-}
-
-article {
     background-color: white;
     border-radius: 5px;
-    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-article h1 {
-    font-size: 36px;
-    margin: 0;
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: black 1px solid;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
 }
 
-article img {
-    display: block;
-    margin: 0 auto 20px;
+.profile-pic {
+    height: 40vh;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: black 1px solid;
+    margin-right: 10px;
 }
 
-article p {
+.bio {
+    height: 40vh;
+    box-sizing: border-box;
+    border: black 1px solid;
+    border-radius: 5px;
+    padding: 10px;
     font-size: 18px;
     line-height: 1.5;
+}
+
+.spacer {
+    height: 20vh;
+}
+
+.portfolio{
+    justify-content: space-between;
+    border: black 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.portfolio li a:hover {
+    text-decoration: underline;
 }
 
 footer {
@@ -56,8 +89,20 @@ footer {
     color: white;
     padding: 20px;
     text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.icon {
-    margin-right: 10px;
+.social-links-container {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links-container img {
+    margin: 0 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
 }
