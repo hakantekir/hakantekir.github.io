@@ -82,14 +82,6 @@ main {
     padding: 10px;
 }
 
-.profile-pic {
-    height: 40vh;
-    box-sizing: border-box;
-    border-radius: 5px;
-    border: black 1px solid;
-    margin-right: 10px;
-}
-
 .bio {
     height: 40vh;
     box-sizing: border-box;
@@ -138,4 +130,51 @@ footer {
 
 .social-icon:hover {
     transform: scale(1.2);
+}
+
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+a img {
+    border: none;
+}
+
+.profile-pic {
+    -webkit-backface-visibility: hidden;
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+    background: rgba(0,0,0,0.2);
+    width: 40vw;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+}
+
+.profile-pic:hover {
+    background: rgba(0,0,0,0);
+}
+
+.profile-pic img {
+    display: block;
+    max-width: 100%;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    -moz-transition: -moz-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-pic:hover img {
+    transform: translateX(100%);
+}
+
+.profile-pic img {
+    height: 40vh;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: black 1px solid;
+    margin-right: 10px;
 }
