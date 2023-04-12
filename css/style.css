@@ -6,11 +6,14 @@ body {
 }
 
 header {
-    background-color: gray;
+    background-color: #15263b;
     color: white;
-    padding: 20px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+header.about {
+    padding: 20px;
 }
 
 .navigation-menu {
@@ -18,17 +21,47 @@ header {
     justify-content: space-around;
 }
 
-nav a {
-    color: white;
+nav a{
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: #3a5c87;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    border-radius: 5px;
     text-decoration: none;
-    font-size: 18px;
-    margin-right: 20px;
-    transition: all 0.3s ease-in-out;
+}
+
+nav a:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 nav a:hover {
-    transform: translateY(-5px);
+    box-shadow: 0 8px #3a6c97;
+    top: -2px;
 }
+
+nav a:active {
+    box-shadow: 0 0 darkblue;
+    top: 6px;
+}
+
 
 main {
     max-width: 65vw;
@@ -85,7 +118,7 @@ main {
 }
 
 footer {
-    background-color: gray;
+    background-color: #15263b;
     color: white;
     padding: 20px;
     text-align: center;
